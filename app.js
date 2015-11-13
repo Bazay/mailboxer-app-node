@@ -1,6 +1,6 @@
 var http = require('http'),
   fs = require('fs'),
-  port = 5000;
+  port = process.env.PORT || 5000;
 
 var app = http.Server().listen(port);
 
